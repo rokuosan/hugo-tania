@@ -20,7 +20,7 @@ h3,
 h4,
 h5 {
     margin: 0 0 1.5rem 0;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -110,7 +110,7 @@ a {
         border-radius: 0.35rem;
         font-weight: 600;
         color: var(--dark-font-color);
-    
+
         &:hover {
             color: var(--link-color);
         }
