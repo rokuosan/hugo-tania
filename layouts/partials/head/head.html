@@ -7,8 +7,13 @@
     <title>{{with.Title}}{{.}} | {{end}}{{.Site.Title}}</title>
 
     {{ template "_internal/google_analytics.html" . }}
-    {{ template "_internal/google_analytics_async.html" . }}
-    
+
+    {{ if .Site.Params.enableNotoSansJP }}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;400;600;800&display=swap" rel="stylesheet">
+    {{ end }}
+
     <meta property="og:site_name" content="{{.Site.Params.siteName}}" />
     <meta property="og:title" content="{{with.Title}}{{.}} | {{end}}{{.Site.Title}}"/>
     <meta itemprop="name" content="{{with.Title}}{{.}} | {{end}}{{.Site.Title}}" />
